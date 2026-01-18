@@ -79,13 +79,13 @@ const Solutions = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <Button 
-                                    as={Link} 
-                                    to="/contact"
-                                    className="cta-button"
-                                >
-                                    Get Started
-                                </Button>
+                                <Link to="/contact" style={{ textDecoration: 'none' }}>
+                                    <Button 
+                                        className="cta-button"
+                                    >
+                                        Get Started
+                                    </Button>
+                                </Link>
                             </div>
                         </Col>
                     ))}

@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import HamburgerMenu from './HamburgerMenu';
 
+interface HamburgerMenuProps {
+    isOpen: boolean;
+    toggleMenu: () => void;
+}
+
 const Navigation: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
