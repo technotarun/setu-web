@@ -1,0 +1,112 @@
+.services {
+    padding: 80px 0;
+    background: #f8f9fa;
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+    }
+
+    .services-grid {
+        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .service-col {
+            margin-bottom: 1rem;
+            flex: 0 1 calc(33.333% - 1.34rem);
+            display: flex;
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            overflow: hidden;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+            }
+
+            .service-icon {
+                font-size: 3rem;
+                padding: 2rem;
+                text-align: center;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: #fff;
+            }
+
+            .card-body {
+                padding: 2rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .card-title {
+                    color: #333;
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    margin-bottom: 1rem;
+                }
+
+                .card-text {
+                    color: #666;
+                    line-height: 1.6;
+                    font-size: 0.95rem;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .services {
+        .services-grid {
+            .service-col {
+                flex: 0 1 calc(50% - 1rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 60px 0;
+
+        .section-header {
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .services-grid {
+            .service-col {
+                flex: 0 1 100%;
+            }
+        }
+    }
+}

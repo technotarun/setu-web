@@ -1,0 +1,193 @@
+@import './variables.scss';
+
+// Large Devices (desktops, 1200px and up)
+@media (min-width: $breakpoint-xl) {
+  body {
+    font-size: $font-size-base;
+  }
+}
+
+// Medium Devices (tablets, 768px and up)
+@media (max-width: $breakpoint-lg) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+// Small Devices (tablets, 576px and up)
+@media (max-width: $breakpoint-md) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  // Navigation
+  .navbar-custom {
+    padding: 0.75rem 0;
+
+    .brand-logo {
+      .logo-text {
+        font-size: 1.3rem;
+      }
+
+      .logo-tagline {
+        font-size: 0.55rem;
+      }
+    }
+
+    .nav-items {
+      margin-top: 1rem;
+      gap: 0;
+
+      .nav-link {
+        padding: 0.5rem 0 !important;
+      }
+    }
+  }
+
+  // Hero Section
+  .hero {
+    padding: 50px 0;
+    min-height: auto;
+  }
+
+  // Services
+  .services {
+    padding: 50px 0;
+  }
+
+  // Solutions
+  .solutions {
+    padding: 50px 0;
+  }
+
+  // Footer
+  footer {
+    padding: 2rem 0;
+  }
+}
+
+// Extra Small Devices (phones, less than 576px)
+@media (max-width: $breakpoint-sm) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  // Header
+  .navbar-custom {
+    padding: 0.5rem 0;
+
+    .brand-logo {
+      .logo-text {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+
+      .logo-tagline {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  // Buttons
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  // Forms
+  .form-control {
+    font-size: 16px; // Prevents zoom on iOS
+  }
+
+  // Spacing adjustments
+  .row {
+    margin: 0 -10px;
+  }
+
+  [class*='col-'] {
+    padding: 0 10px;
+  }
+
+  // Remove horizontal padding on containers
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Print Styles
+@media print {
+  body {
+    background: white;
+  }
+
+  .navbar-custom,
+  footer,
+  .btn,
+  .contact-form button {
+    display: none;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex; // Show navigation on desktop
+  }
+
+  .navigation a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: $text-color; // Use a text color from variables
+  }
+
+  .hamburger-menu {
+    display: none; // Hide hamburger menu on desktop
+  }
+}

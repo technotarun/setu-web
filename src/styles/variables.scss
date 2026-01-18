@@ -1,0 +1,73 @@
+// Primary Colors
+$primary-color: #667eea;
+$secondary-color: #764ba2;
+$accent-color: #f093fb;
+
+// Status Colors
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+
+// Neutral Colors
+$light-color: #f8f9fa;
+$dark-color: #1a1a1a;
+$white: #ffffff;
+$black: #000000;
+$gray-100: #f5f6f7;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Typography
+$font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-family-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+$line-height-base: 1.6;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.75rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 2.5rem;
+$spacing-3xl: 3rem;
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-base: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+
+// Shadows
+$box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+$box-shadow-base: 0 5px 20px rgba(0, 0, 0, 0.08);
+$box-shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
+$box-shadow-xl: 0 15px 50px rgba(0, 0, 0, 0.2);
+
+// Transitions
+$transition-fast: 0.15s ease-in-out;
+$transition-base: 0.3s ease-in-out;
+$transition-slow: 0.5s ease-in-out;
+
+// Layout
+$container-max-width: 1200px;
+$header-height: 70px;
+$footer-height: auto;
